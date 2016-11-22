@@ -49,7 +49,7 @@ function insert($table, $array)
  */
 function update($table, $array, $where = null)
 {
-  $str="";
+  $str = "";
   foreach ($array as $key => $val) { //$key即为要修改的值
     if ($str == null) {
       $sep = "";
@@ -73,12 +73,11 @@ function update($table, $array, $where = null)
  */
 function delete($table, $where = null)
 {
-  $link = mysqli_connect(DB_HOST, DB_USER, DB_PWD, DB_DBNAME);
   mysqli_set_charset($link, 'utf8');
   mysqli_select_db($link, "$table");
   $where = ($where == null ? null : " where " . $where);
   $sql = "DELETE FROM $table {$where}";
-  $res = mysqli_query($link, $sql);
+  $res = mysqli_query(connect(), $sql);
   return $res;
 }
 
