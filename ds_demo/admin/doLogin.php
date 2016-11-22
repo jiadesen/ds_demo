@@ -19,7 +19,7 @@ if ($verify == $verify1) {
     $_SESSION['adminName'] = $res['username'];
     $_SESSION['adminId'] = $res['id']; //用于检查是否登录
     //验证通过跳转
-    //header("location:index.php");
+//    header("location:index.php");
     alertMes("登录成功", "index.php");
   } else {
     alertMes("登录失败，请重新登录", "login.php"); //此方法定义在common.func.php(公共函数库)

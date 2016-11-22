@@ -8,14 +8,24 @@ if ($act == "logout") {
   logout();
 } elseif ($act == "addAdmin") {
   $mes = addAdmin();
+} elseif ($act == "editAdmin") {
+  $where = "id={$id}";
+  $mes = editAdmin($where);
 } elseif ($act == "delAdmin") {
   $mes = delAdmin($id);
+} elseif ($act == "addCate") {
+  $mes = addCate();
+} elseif ($act == "editCate") {
+  $where = "id={$id}";
+  $mes = editCate($where);
+} elseif ($act == "delCate") {
+  $mes = delCate($id);
 }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
   <title></title>
 </head>
 <body>

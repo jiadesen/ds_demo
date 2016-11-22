@@ -6,7 +6,7 @@ checkLogined(); //检查是否登录，未登录则调用该方法阻止进入�
 <html>
 <head>
   <meta charset="utf-8">
-  <title>-.-</title>
+  <title>后台管理系统</title>
   <link rel="stylesheet" href="styles/backstage.css">
 </head>
 
@@ -95,7 +95,6 @@ checkLogined(); //检查是否登录，未登录则调用该方法阻止进入�
       </ul>
     </div>
   </div>
-
 </div>
 <script type="text/javascript">
   function show(num, change) {

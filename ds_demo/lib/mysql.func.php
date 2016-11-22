@@ -6,10 +6,8 @@
  */
 function connect()
 {
-//  $link=mysqli_connect(DB_HOST,DB_USER,DB_PWD) or die("数据库连接失败Error:".mysqli_errno().":".mysqli_error());
-//  mysqli_set_charset(DB_CHARSET);
-//  mysqli_select_db(DB_DBNAME) or die("指定数据库打开失败");
-  $link = new mysqli(DB_HOST, DB_USER, DB_PWD, DB_DBNAME);
+  $link = mysqli_connect(DB_HOST, DB_USER, DB_PWD, DB_DBNAME);
+  mysqli_set_charset($link, DB_CHARSET);
 //  检测连接
   if ($link->connect_error) {
     die("连接失败：" . $link->connect_error);
@@ -51,26 +49,20 @@ function insert($table, $array)
  */
 function update($table, $array, $where = null)
 {
-//  foreach ($array as $key => $val) {
-//    if ($str == null) {
-//      $sep = "";
-//    } else {
-//      $sep = ",";
-//    }
-//    $str .= $sep . $key . "='" . $val . "'";
-//  }
-//  $sql = "update {$table} set {$str} " . ($where == null ? null : " where " . $where);
-//  $result = mysqli_query($sql);
-//  //var_dump($result);
-//  //var_dump(mysql_affected_rows());exit;
-//  if ($result) {
-//    return mysqli_affected_rows();
-//  } else {
-//    return false;
-//  }
-  $sql = "update {$table} set cName='{$array}'" . ($where == null ? null : "where") . $where;
-  mysqli_query(connect(), $sql);
-  return mysqli_affected_rows(connect());
+  $str="";
+  foreach ($array as $key => $val) { //$key即为要修改的值
+    if ($str == null) {
+      $sep = "";
+    } else {
+      $sep = ",";
+    }
+    $str .= $sep . $key . "='" . $val . "'";
+//    echo $cName . "<br/>";
+  }
+  $sql = "update {$table} set {$str} " . ($where == null ? null : " where " . $where);
+//  echo $sql . "<br/>";
+  $result = mysqli_query(connect(), $sql);
+  return $result; //存在的问题，没有阻止更新到一个数据库中存在的值
 }
 
 /**
@@ -96,7 +88,7 @@ function delete($table, $where = null)
  * @param string $result_type
  * @return multitype:
  */
-function fetchOne($sql, $result_type = MYSQLI_ASSOC)
+function fetchOne($sql)
 {
   $result = mysqli_query(connect(), $sql);
   if ($result->num_rows > 0) {

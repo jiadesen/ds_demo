@@ -12,7 +12,7 @@ if (!$rows) {
 <html>
 <head>
   <meta charset="utf-8">
-  <title>-.-</title>
+  <title></title>
   <link rel="stylesheet" href="styles/backstage.css">
 </head>
 
@@ -22,7 +22,6 @@ if (!$rows) {
     <div class="bui_select">
       <input type="button" value="添&nbsp;&nbsp;加" class="add" onclick="addAdmin()">
     </div>
-
   </div>
   <!--表格-->
   <table class="table" cellspacing="0" cellpadding="0">

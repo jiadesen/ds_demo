@@ -34,8 +34,10 @@
         <li class="l-tit">验证码</li>
         <li class="mb-10"><input type="text" name="verify" class="login-input"></li>
         <img id="captcha_img" src="getVerify.php" alt=""/>
-        <a href="javascript:void(0)" onclick="document.getElementById('captcha_img').src='getVerify.php?r='+Math.random()">看不清，换一个</a>
-        <li class="auto-login"><input type="checkbox" name="autoFlag" value="1" id="a1" class="checked"><label for="a1">自动登陆(一周内自动登录)</label></li>
+        <a href="javascript:void(0)"
+           onclick="document.getElementById('captcha_img').src='getVerify.php?r='+Math.random()">看不清，换一个</a>
+        <li class="auto-login"><input type="checkbox" name="autoFlag" value="1" id="a1" class="checked"><label for="a1">自动登陆(一周内自动登录)</label>
+        </li>
         <li><input type="submit" value="" class="login-btn"></li>
       </ul>
     </form>
