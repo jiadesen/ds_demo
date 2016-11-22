@@ -73,8 +73,8 @@ function update($table, $array, $where = null)
  */
 function delete($table, $where = null)
 {
-  mysqli_set_charset($link, 'utf8');
-  mysqli_select_db($link, "$table");
+  mysqli_set_charset(connect(), 'utf8');
+  mysqli_select_db(connect(), "$table");
   $where = ($where == null ? null : " where " . $where);
   $sql = "DELETE FROM $table {$where}";
   $res = mysqli_query(connect(), $sql);
