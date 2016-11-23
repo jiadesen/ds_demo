@@ -30,6 +30,8 @@
 
 - 更新`shop.sql`文件。
 
+- 修正函数库`lib`文件夹下`mysql.func.php`文件中的`insert()`方法，抛弃`getInsertId()`方法。
+
 - 引入最新`KindEditor 4.1.1`网页文档编辑器插件。
 
 - 完成`商品管理`模块所有功能。
