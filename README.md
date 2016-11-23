@@ -15,6 +15,7 @@
 更新shop.sql文件，添加一个默认管理员账户，user->admin;password->admin，修复一些并不影响执行的错误(但是在 localhost/phpmyadmin 中执行sql语句，数据表中存在 password 的位置依然有错误提示，将所有的 password 改为 pwd 或其它形式的简写错误提示消失)；<br/>
 修复 mysql.func.php 中数据库更新操作函数中的错误，顺带些许代码优化。
 >### de_demo_v1.3 : 2016/11/24 
+
 哈哈哈
 
 <br/>
