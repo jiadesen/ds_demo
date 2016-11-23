@@ -142,12 +142,3 @@ function getResultNum($sql)
   $totalRows = $result->num_rows;
   return $totalRows;
 }
-
-/**
- * 得到上一步插入记录的ID号
- * @return number
- */
-function getInsertId()
-{
-  return mysqli_insert_id();
-}
