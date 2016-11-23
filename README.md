@@ -22,13 +22,13 @@
 
 - 完成了`管理员管理`模块和`商品分类`模块的`添加`、`修改`和`删除`操作，去除目前为止所有php文件中的一些无用代码。
 
-- 更新shop.sql文件，添加一个默认管理员账户，user->admin;password->admin，修复一些并不影响执行的错误(但是在 localhost/phpmyadmin 中执行sql语句，数据表中存在 password 的位置依然有错误提示，将所有的 password 改为 pwd 或其它形式的简写错误提示消失)。
+- 更新`shop.sql`文件，添加一个默认管理员账户，user->admin;password->admin，修复一些并不影响执行的错误(但是在 localhost/phpmyadmin 中执行sql语句，数据表中存在 password 的位置依然有错误提示，将所有的 password 改为 pwd 或其它形式的简写错误提示消失)。
 
 - 修复 mysql.func.php 中数据库更新操作函数中的错误，顺带些许代码优化。
 
 >### de_demo_v1.3 : 2016/11/24 
 
-- 更新shop.sql文件。
+- 更新`shop.sql`文件。
 
 - 引入最新`KindEditor 4.1.1`网页文档编辑器插件。
 
