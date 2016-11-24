@@ -26,7 +26,7 @@
 
 - 完成了`管理员管理`模块和`商品分类`模块的`添加`、`修改`和`删除`操作，去除目前为止所有php文件中的一些无用代码。
 
-- 更新`shop.sql`文件，添加一个默认管理员账户，user->admin;password->admin，修复一些并不影响执行的错误(但是在 localhost/phpmyadmin 中执行sql语句，数据表中存在 password 的位置依然有错误提示，将所有的 password 改为 pwd 或其它形式的简写错误提示消失)。
+- 更新`shop.sql`文件，添加一个默认管理员账户，user->admin;password->admin，修复一些并不影响执行的错误。
 
 - 修复 mysql.func.php 中数据库更新操作函数中的错误，顺带些许代码优化。
 
@@ -41,6 +41,18 @@
 - 完成`商品管理`模块所有功能。
 
 - 为后台页面控制条中的`首页`和`刷新`添加实际功能。
+
+>### de_demo_v2.3 : 2016/11/25
+
+- (创新)更新`shop.sql`文件。为管理员表添加了`supAdmin`字段，区分超级管理员和普通管理员
+
+- 为`管理员管理`模块添加一层判断逻辑，只有超级管理员才有权限对管理员数据库进行增、删、改。
+
+- 更新mysql.func.php,修复当商品列表为空时 fetchAll() 方法提示 Notice: Undefined variable: rows in...
+
+- 加 @ 前缀忽略性解决：Notice: Trying to get property of non-object in...
+
+- 对所有php页面的检查优化
 
 
 `未完待续...`
