@@ -179,7 +179,7 @@ function getProById($id)
  */
 function checkProExist($cid)
 {
-  $sql = "select * from shop_pro where cId={$cid}";
+  $sql = "SELECT * FROM shop_pro WHERE cId={$cid}";
   $rows = fetchAll($sql);
   return $rows;
 }

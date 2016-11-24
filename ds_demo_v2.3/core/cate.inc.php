@@ -33,12 +33,17 @@ function editCate($where)
 //删除商品分类的操作
 function delCate($id)
 {
-  if (delete("shop_cate", "id={$id}")) {
-    $mes = "删除成功!<br/><a href='listCate.php'>查看商品分类列表</a>";
-  } else {
-    $mes = "删除失败!<br/><a href='listCate.php'>重新删除</a>";
+  $res = checkProExist($id); //删除商品分类时检查商品分类下是否还有商品信息，有则提示先清空该分类下商品信息
+  if(!$res) {
+    if (delete("shop_cate", "id={$id}")) {
+      $mes = "删除成功!<br/><a href='listCate.php'>查看商品分类列表</a>";
+    } else {
+      $mes = "删除失败!<br/><a href='listCate.php'>重新删除</a>";
+    }
+    return $mes;
+  }else{
+    alertMes("不能删除分类，请先删除该分类下的商品","listPro.php");
   }
-  return $mes;
 }
 
 //得到所有商品分类
