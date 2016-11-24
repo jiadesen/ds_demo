@@ -44,15 +44,15 @@
 
 >### de_demo_v2.3 : 2016/11/25
 
-- (创新)更新`shop.sql`文件。为管理员表添加了`supAdmin`字段，区分超级管理员和普通管理员
+- (创新)更新`shop.sql`文件。为管理员表添加了`supAdmin`字段，区分超级管理员和普通管理员。
 
 - 为`管理员管理`模块添加一层判断逻辑，只有超级管理员才有权限对管理员数据库进行增、删、改。
 
 - 更新mysql.func.php,修复当商品列表为空时 fetchAll() 方法提示 Notice: Undefined variable: rows in...
 
-- 加 @ 前缀忽略性解决：Notice: Trying to get property of non-object in...
+- 加 @ 前缀忽略性解决：Notice: Trying to get property of non-object in...等几个类似错误。
 
-- 对所有php页面的检查优化
+- 对所有php页面的检查优化。
 
 
 `未完待续...`
