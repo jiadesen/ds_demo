@@ -23,7 +23,7 @@
 
 - 更新`shop.sql`文件，添加一个默认管理员账户，user->admin;password->admin，修复一些并不影响执行的错误。
 
-- 修复 mysql.func.php 中数据库更新操作函数中的错误，顺带些许代码优化。
+- 修复`mysql.func.php`中数据库更新操作函数中的错误，顺带些许代码优化。
 
 >### de_demo_v2.2 : 2016/11/24 
 
@@ -43,9 +43,9 @@
 
 - `(创新)`为`管理员管理`模块添加一层判断逻辑，只有超级管理员才有权限对管理员数据库进行增、删、改。
 
-- 更新mysql.func.php,修复当商品列表为空时 fetchAll() 方法提示 Notice: Undefined variable: rows in...
+- 更新`mysql.func.php`,修复当商品列表为空时`fetchAll()`方法提示`Notice: Undefined variable: rows in...`
 
-- 加 @ 前缀忽略性解决：Notice: Trying to get property of non-object in...等几个类似错误。
+- 加`@`前缀忽略性解决：`Notice: Trying to get property of non-object in...`等几个类似错误。
 
 - 对所有php页面的检查优化。
 
