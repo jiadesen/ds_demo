@@ -49,6 +49,20 @@
 
 - 对所有php页面的检查优化。
 
+>### de_demo_v2.4 : 2016/11/27
+
+- 更新`shop.sql`文件。简化了`shop_user`表，仅保留`id`,`username`,`password`和`email`。
+
+- 使用jquery实现异步提交注册信息，`sign_in.js`中被注释搁置，文件`user_register.php`接收并处理请求。
+
+- 使用原生AJAX实现异步的POST提交注册信息，默认使用，文件`user_register_ys_ajax.php`接收并处理请求。
+
+- 对用户输入的各项表单添加简单的验证规则(仅添加了位数验证，并没有加入正则进行内容验证)。
+
+- 为`用户名`输入框添加发起异步get请求，验证是否重名。
+
+- 又消灭掉两个`Notice`...
+
 
 `未完待续...`
 
