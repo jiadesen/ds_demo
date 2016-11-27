@@ -53,7 +53,7 @@ CREATE TABLE shop_pro (
 
 /*用户表*/
 CREATE TABLE shop_user (
-  id       INT PRIMARY KEY       AUTO_INCREMENT,
+  id       INT PRIMARY KEY AUTO_INCREMENT,
   username VARCHAR(20),
   password VARCHAR(32),
   email    VARCHAR(32)

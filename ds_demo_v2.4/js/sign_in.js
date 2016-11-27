@@ -12,7 +12,7 @@ var result_email = false;
 var m = document.getElementById('username').nextElementSibling;
 // console.log(m);
 $('#username').focus(function () {
-    this.nextElementSibling.innerHTML = '用户名长度在4到20位之间';
+    this.nextElementSibling.innerHTML = '支持字母、数字的组合，4-20个字符';
     this.nextElementSibling.className = 'default';
 });
 $('#username').blur(function () {
@@ -30,7 +30,7 @@ $('#username').blur(function () {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
-                    console.log('响应完成且成功');
+                    // console.log('响应完成且成功');
                     doResponse(xhr);
                 } else {
                     console.log('响应完成但有问题');
@@ -40,8 +40,11 @@ $('#username').blur(function () {
         xhr.open('GET', 'data/check_name.php?username=' + text, true);
         xhr.send(null);
         function doResponse(xhr) {
-            console.log('开始处理响应数据');
-            if (xhr.responseText === 'cunzai') {
+            // console.log('开始处理响应数据');
+            if (xhr.responseText === 'noreg') {
+                m.innerHTML = '支持字母、数字的组合，4-20个字符';
+                m.className = 'default error';
+            } else if (xhr.responseText === 'cunzai') {
                 m.innerHTML = '该用户名已存在';
                 m.className = 'default error';
             } else if (xhr.responseText === 'bucunzai') {
@@ -158,7 +161,7 @@ document.getElementById('bt-register').onclick = function () {
                 alert('注册成功!');
                 // location.href = 'login.html';
             } else {
-                alert('注册失败!');
+                alert('注册失败!请重新注册');
             }
         }
     } else {
