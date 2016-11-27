@@ -55,9 +55,9 @@
 
 - 更新`shop.sql`文件。简化了`shop_user`表，仅保留`id`,`username`,`password`和`email`。
 
-- `(创新)`使用jquery实现异步提交注册信息，`sign_in.js`中被注释搁置，文件`data/user_register_jq_ajax.php`接收并处理请求。
+- `(创新)`使用jquery实现异步提交注册信息，`js/sign_in.js`中被注释搁置，文件`data/user_register_jq_ajax.php`接收信息并返回`json字符串`。
 
-- `(创新)`使用原生AJAX实现异步的POST提交注册信息，默认使用，文件`data/user_register_ys_ajax.php`接收并处理请求。
+- `(创新)`使用原生AJAX实现异步的POST提交注册信息，默认使用，文件`data/user_register_ys_ajax.php`接收信息并返回`text字符串`。
 
 - `(创新)`对用户输入的各项表单添加简单的验证规则(仅添加了位数验证规则，并没有加入正则进行内容验证)。
 
@@ -69,6 +69,12 @@
 
 - 上述`bug`已解决！`错误原因`：在`用户名`输入框中使用中文输入法，没有确认选择文字，而直接使输入框失去焦点时，会提交类似这样的数据：`a's'd'f`，注意其中的`'`，没错，就是单引号引起的错误，最可恨的是这还是英文单引号！直接导致sql查询语句错误！
   `解决办法`：加入正则！(骚年，忘记偷懒这个词吧...)在`data/check_name.php`中加入正则判断逻辑，接收到数据后先进行正则匹配，不匹配终止查询操作并返回给客户端信息，匹配才进行数据库查询是否重名的操作。
+  
+>### de_demo_v2.5 : 2016/11/28
+
+- `(创新)`使用jquery实现异步提交登录信息，`js/login.js`中被注释搁置，文件`data/user_login_jq_ajax.php`接收信息并返回`text字符串`。
+
+- `(创新)`使用原生AJAX实现异步提交登录信息，默认使用，文件`data/user_login_ys_ajax.php`接收信息并返回`json字符串`。
 
 
 `未完待续...`
