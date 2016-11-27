@@ -13,14 +13,28 @@
 <!--页面主体-->
 <div class="login-box">
     <div class="login-cont">
-        <ul class="login">
-            <li class="l-tit">邮箱/用户名/手机号</li>
-            <li class="mb-10"><input type="text" class="login-input user-icon"></li>
-            <li class="l-tit">密码</li>
-            <li class="mb-10"><input type="text" class="login-input user-icon"></li>
-            <li class="auto-login"><input type="checkbox" id="a1" class="checked"><label for="a1">自动登陆</label></li>
-            <li><input type="button" value="" class="login-btn"></li>
-        </ul>
+        <form action="data/user_login.php">
+            <ul class="login">
+                <li class="l-tit">
+                    <label for="username">用户名：</label>
+                </li>
+                <li class="mb-10">
+                    <input id="username" name="username" type="text" class="login-input user-icon" required>
+                </li>
+                <li class="l-tit">
+                    <label for="password">密码：</label>
+                </li>
+                <li class="mb-10">
+                    <input id="password" name="password" type="text" class="login-input user-icon" required>
+                </li>
+                <li class="auto-login">
+                    <input type="checkbox" id="a1" class="checked"><label for="a1">自动登陆</label>
+                </li>
+                <li>
+                    <input id="login_btn" type="button" value="" class="login-btn">
+                </li>
+            </ul>
+        </form>
         <div class="login-partners">
             <p class="l-tit">使用合作方账号登陆网站</p>
             <ul class="login-list clearfix">
@@ -38,7 +52,7 @@
             </ul>
         </div>
     </div>
-    <a class="reg-link" href="#"></a>
+    <a class="reg-link" href="sign_in.html" target="_blank"></a>
 </div>
 
 <!--页面尾部-->

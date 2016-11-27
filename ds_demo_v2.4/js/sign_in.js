@@ -107,7 +107,7 @@ email.onblur = function () {
 //         //AJAX异步提交请求数据
 //         $.ajax({
 //             type: 'POST',
-//             url: 'data/user_register.php',
+//             url: 'data/user_register_jq_ajax.php',
 //             data: data,
 //             success: function (result) {
 //                 // console.log('开始处理服务器端返回的注册结果');
