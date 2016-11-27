@@ -57,7 +57,7 @@
 
 - `(创新)`使用jquery实现异步提交注册信息，`js/sign_in.js`中被注释搁置，文件`data/user_register_jq_ajax.php`接收信息并返回`json字符串`。
 
-- `(创新)`使用原生AJAX实现异步的POST提交注册信息，默认使用，文件`data/user_register_ys_ajax.php`接收信息并返回`text字符串`。
+- `(创新)`使用原生AJAX实现异步的POST提交注册信息，文件`data/user_register_ys_ajax.php`接收信息并返回`text字符串`。
 
 - `(创新)`对用户输入的各项表单添加简单的验证规则(仅添加了位数验证规则，并没有加入正则进行内容验证)。
 
@@ -74,7 +74,7 @@
 
 - `(创新)`使用jquery实现异步提交登录信息，`js/login.js`中被注释搁置，文件`data/user_login_jq_ajax.php`接收信息并返回`text字符串`。
 
-- `(创新)`使用原生AJAX实现异步提交登录信息，默认使用，文件`data/user_login_ys_ajax.php`接收信息并返回`json字符串`。前台处理返回信息时，注意需要将`json字符串`使用`eval()`方法转换为`json对象`。
+- `(创新)`使用原生AJAX实现异步提交登录信息，文件`data/user_login_ys_ajax.php`接收信息并返回`json字符串`。前台处理返回信息时，注意需要将`json字符串`使用`eval()`方法转换为`json对象`。
 
 - `(创新)`用户登录成功后，自动跳转到商城首页，右上角显示当前登录的用户名称。
 
