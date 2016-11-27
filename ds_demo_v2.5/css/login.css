@@ -1,0 +1,134 @@
+/*欢迎*/
+.welcome-title {
+    font: 22px/85px "Microsoft YaHei", "微软雅黑";
+    color: #FFF;
+    float: left;
+    padding-left: 24px;
+}
+
+/*注册*/
+.login-logo .comWidth {
+    width: 460px;
+}
+
+.welcome-title {
+    font: 22px/85px "Microsoft YaHei", "微软雅黑";
+    color: #FFF;
+    float: left;
+    padding-left: 24px;
+}
+
+.login-box {
+    width: 458px;
+    border: #999 solid 1px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.login-cont {
+    padding: 15px 76px;
+}
+
+.l-tit {
+    color: #666;
+    line-height: 20px;
+}
+
+.login-input {
+    border: #999 solid 1px;
+    height: 32px;
+    line-height: 32px \9;
+    text-indent: 5px;
+    width: 100%;
+}
+
+.user-icon {
+    background: url(../img/icon/user_icon.jpg) right center no-repeat;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.auto-login {
+    padding-top: 27px;
+    padding-bottom: 28px;
+}
+
+.checked {
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+}
+
+.login-btn {
+    width: 309px;
+    height: 36px;
+    background: url(../img/icon/login_btn.jpg) left top no-repeat;
+    cursor: pointer;
+}
+
+.login-partners {
+    padding-top: 34px;
+}
+
+.login-list li {
+    float: left;
+    line-height: 20px;
+}
+
+.login-list span {
+    color: #999;
+    margin: 0 2px;
+}
+
+.reg-link {
+    width: 115px;
+    height: 31px;
+    background: url(../img/icon/red_link.jpg) left top no-repeat;
+    position: absolute;
+    right: 31px;
+    bottom: -31px;
+}
+
+.red-logo .com-width {
+    width: 630px;
+}
+
+.reg-box {
+    width: 628px;
+    margin: 10px auto;
+    border: #CCC solid 1px;
+}
+
+.reg-item {
+    font: 14px/34px "宋体";
+    width: 110px;
+    text-align: right;
+    float: left;
+}
+
+.reg-item i {
+    color: red;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.input-item {
+    width: 306px;
+    float: left;
+}
+
+.reg-box li {
+    height: 70px;
+    vertical-align: top;
+}
+
+.reg-box .auto-login {
+    height: 46px;
+    padding: 0;
+}
+
+.reg-box .login-cont {
+    padding: 45px 76px 20px 76px;
+}

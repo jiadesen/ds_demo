@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/sign_in.css">
+</head>
+<body>
+<!--页面头部-->
+<div class="header-bar"></div>
+
+<!--页面主体-->
+<div class="reg-box">
+    <div class="login-cont">
+        <form id="register"> <!--注册提交的表单-->
+            <ul class="login">
+                <li>
+                    <label for="username"><span class="reg-item"><i>*</i>用户名：</span></label>
+                    <div class="input-item">
+                        <input id="username" name="username" type="text" class="login-input user-icon" required
+                               minlength="4"
+                               maxlength="20" placeholder="请输入用户名">
+                        <p class="default hide"></p>
+                    </div>
+                </li>
+                <li>
+                    <label for="password"><span class="reg-item"><i>*</i>密码：</span></label>
+                    <div class="input-item">
+                        <input id="password" name="password" type="password" class="login-input user-icon" required
+                               minlength="6"
+                               maxlength="18" placeholder="请输入密码">
+                        <p class="default hide"></p>
+                    </div>
+                </li>
+                <li>
+                    <label for="email"><span class="reg-item"><i>*</i>邮箱：</span></label>
+                    <div class="input-item">
+                        <input id="email" name="email" type="email" class="login-input user-icon" required
+                               placeholder="请输入邮箱">
+                        <p class="default hide"></p>
+                    </div>
+                </li>
+                <!--注册时间(注册时获取到的服务器时间)-->
+                <!--<input id="sign_in_time" name="sign_in_time" type="hidden">-->
+                <li class="auto-login">
+                    <span class="reg-item">&nbsp;</span><input type="checkbox" id="t1" class="checked" checked>
+                    <label for="t1">我已阅读并同意<a href="#">《商城用户注册协议》</a></label>
+                </li>
+                <li>
+                    <span class="reg-item">&nbsp;</span>
+                    <input id="bt-register" type="button" value="" class="login-btn">
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<!--页面尾部-->
+<div class="footer"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/sign_in.js"></script>
+</body>
+</html>
