@@ -37,12 +37,13 @@ $(function () {
 //功能点2：点击登录按钮，异步验证客户端登录信息(原生AJAX版)
 document.getElementById('login_btn').onclick = function () {
     var n = username.value;
+    // console.log(n);
     var p = password.value;
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-                console.log('响应完成且成功');
+                // console.log('响应完成且成功');
                 doResponse(xhr);
             } else {
                 console.log('响应完成但有问题');
@@ -58,9 +59,11 @@ document.getElementById('login_btn').onclick = function () {
         var data = xhr.responseText;
         // console.log(data);
         //将json格式字符串转换为json对象
-        data = eval("("+data+")");
+        data = eval("(" + data + ")");
         // console.log(data);
-        if (data.msg == 'ok') {
+        if (data.msg == 'no_reg') {
+            alert('账户名不存在！请重新输入');
+        } else if (data.msg == 'ok') {
             if (document.getElementById('autoLogin').checked) {//判断是否勾选了自动登录
                 localStorage['loginName'] = $('[name="username"]').val();
                 // console.log('local:'+localStorage['loginName']);
