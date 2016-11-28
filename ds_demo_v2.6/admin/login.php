@@ -16,7 +16,7 @@
     <div class="logo-bar">
         <div class="com-width">
             <div class="logo fl">
-                <a href="#"><img src="images/logo.jpg" alt="商城"></a>
+                <a href="../index.html" target="_blank"><img src="images/logo.jpg" alt="商城"></a>
             </div>
             <h3 class="welcome-title">后台管理员登录</h3>
         </div>

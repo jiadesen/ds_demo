@@ -61,7 +61,8 @@ document.getElementById('login_btn').onclick = function () {
         var data = xhr.responseText;
         // console.log(data);
         //将json格式字符串转换为json对象
-        data = eval("(" + data + ")");
+        // data = eval("(" + data + ")");
+        data = JSON.parse(data);
         // console.log(data);
         if (data.msg == 'no_reg') {
             alert('账户名不存在！请重新输入');

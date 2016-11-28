@@ -12,7 +12,7 @@ checkLogined(); //检查是否登录，未登录则调用该方法阻止进入�
 
 <body>
 <div class="head">
-    <div class="logo fl"><a href="#"></a></div>
+    <a href="../index.html" target="_blank"><div class="logo fl"></div></a>
     <h3 class="head_text fr">电子商务后台管理系统</h3>
 </div>
 <div class="operation_user clearfix">
