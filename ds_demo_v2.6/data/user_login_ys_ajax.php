@@ -1,8 +1,8 @@
 <?php
 header('Content-Type:application/json;charset=UTF-8');
 $username = $_REQUEST['username'];
-$password = md5($_REQUEST['password']); //添加正则，输入的用户名仅允许使用大小写字母和数字
-$patten = '/^[A-Za-z0-9]+$/';
+$password = md5($_REQUEST['password']);
+$patten = '/^[A-Za-z0-9]+$/'; //添加正则，输入的用户名仅允许使用大小写字母和数字
 $output = []; //要返回的json字符串
 if (!preg_match($patten, $username)) {
     $output['msg'] = 'no_reg';

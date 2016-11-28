@@ -15,7 +15,9 @@ $(function () {
 //         url: 'data/user_login_jq_ajax.php',
 //         data: inputData,
 //         success: function (txt, msg, xhr) {
-//             if (txt == 'ok') {
+//             if (txt == 'no_reg') {
+//                 alert('账户名不存在！请重新输入');
+//             } else if (txt == 'ok') {
 //                 //加上一层判断逻辑，当用户勾选了自动登录时将username存如localStorage
 //                 //$('[name="autoLogin"]').is(':checked') 返回结果：选中=true，未选中=false
 //                 if ($('[name="autoLogin"]').is(':checked')) {
