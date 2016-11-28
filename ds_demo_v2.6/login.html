@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<!--页面头部-->
+<div class="header-bar"></div>
+
+<!--页面主体-->
+<div class="login-box">
+    <div class="login-cont">
+        <form id="login-form">
+            <ul class="login">
+                <li class="l-tit">
+                    <label for="username">用户名：</label>
+                </li>
+                <li class="mb-10">
+                    <input id="username" name="username" type="text" class="login-input user-icon" required>
+                </li>
+                <li class="l-tit">
+                    <label for="password">密码：</label>
+                </li>
+                <li class="mb-10">
+                    <input id="password" name="password" type="password" class="login-input user-icon" required>
+                </li>
+                <li class="auto-login">
+                    <input id="autoLogin" name="autoLogin" type="checkbox" class="checked"><label for="autoLogin">自动登陆</label>
+                </li>
+                <li>
+                    <input id="login_btn" type="button" value="" class="login-btn">
+                </li>
+            </ul>
+        </form>
+        <div class="login-partners">
+            <p class="l-tit">使用合作方账号登陆网站</p>
+            <ul class="login-list clearfix">
+                <li><a href="#">QQ</a></li>
+                <li><span>|</span></li>
+                <li><a href="#">网易</a></li>
+                <li><span>|</span></li>
+                <li><a href="#">新浪微博</a></li>
+                <li><span>|</span></li>
+                <li><a href="#">腾讯微薄</a></li>
+                <li><span>|</span></li>
+                <li><a href="#">新浪微博</a></li>
+                <li><span>|</span></li>
+                <li><a href="#">腾讯微薄</a></li>
+            </ul>
+        </div>
+    </div>
+    <a class="reg-link" href="sign_in.html" target="_blank"></a>
+</div>
+
+<!--页面尾部-->
+<div class="footer"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
