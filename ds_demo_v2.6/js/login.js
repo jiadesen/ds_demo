@@ -68,11 +68,11 @@ document.getElementById('login_btn').onclick = function () {
             alert('账户名不存在！请重新输入');
         } else if (data.msg == 'ok') {
             if (document.getElementById('autoLogin').checked) {//判断是否勾选了自动登录
-                localStorage['loginName'] = $('[name="username"]').val();
-                // console.log('local:'+localStorage['loginName']);
+                localStorage['loginName'] = n;
             } else {
-                sessionStorage['loginName'] = $('[name="username"]').val();
-                // console.log('session:'+sessionStorage['loginName']);
+                sessionStorage['loginName'] = n;
+                //即使用户没有勾选自动登录，也在cookie中保存一条登录信息，有效时间12小时，主动点退出时删除
+                // document.cookie = "username=" + n + ";expires=" + (new Date().getTime() + 12 * 3600 * 1000);
             }
             alert('登陆成功!');
             location.href = 'index.html';
@@ -81,20 +81,3 @@ document.getElementById('login_btn').onclick = function () {
         }
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
