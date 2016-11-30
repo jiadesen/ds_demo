@@ -1,0 +1,315 @@
+/*组件*/
+.select {
+    border: #999 solid 1px;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+    background-color: #FFF;
+    padding-left: 10px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 4;
+}
+
+.select h3 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.select span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: url(../img/icon/sj_blue.jpg) center center no-repeat;
+}
+
+.show-select {
+    position: absolute;
+    left: -1px;
+    top: 22px;
+    background-color: #FFF;
+    width: 100%;
+    border: #999 solid 1px;
+    display: none;
+}
+
+.show-select li {
+    padding-left: 10px;
+}
+
+/*购物车*/
+.step-box {
+    width: 396px;
+    padding-top: 26px;
+}
+
+.step {
+    background: url(../img/step.jpg) left top no-repeat;
+    height: 19px;
+}
+
+.step-text {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.step-text li {
+    float: left;
+}
+
+.s01, .s03 {
+    width: 30%;
+}
+
+.s02 {
+    width: 40%;
+    text-align: center;
+}
+
+.s03 {
+    text-align: right;
+}
+
+.step-text .active {
+    color: #F3E402;
+    font-weight: bold;
+}
+
+.shoppingCart {
+    padding-top: 10px;
+}
+
+.shopping-item {
+    border: #ccc solid 1px;
+    margin-bottom: 20px
+}
+
+.shopping-tit {
+    height: 31px;
+    background: url(../img/shopping_bg.jpg) left top repeat-x;
+    color: #444444;
+    font: 16px/31px "Microsoft YaHei", "微软雅黑";
+    text-indent: 12px;
+    border-bottom: #E3E3E3 solid 1px;
+}
+
+.shopping-cont {
+    margin-bottom: 10px;
+}
+
+.padding-shop {
+    padding: 25px 30px;
+}
+
+.shopping-list-text {
+    float: left;
+    width: 76px;
+    line-height: 24px;
+}
+
+.cart-tel, .input {
+    vertical-align: middle;
+}
+
+.cart-tel {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+}
+
+.shopping-list li {
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.shopping-list-text em {
+    color: #F30;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.input {
+    height: 22px;
+    line-height: 22px \9;
+    border: #CCC solid 1px;
+    padding: 0 6px;
+    width: 110px;
+}
+
+.input-b {
+    width: 392px;
+}
+
+.input-s {
+    width: 64px;
+}
+
+.input-s2 {
+    width: 84px;
+}
+
+.jian {
+    padding: 0 3px;
+}
+
+.affirm {
+    width: 114px;
+    height: 28px;
+    background: url(../img/sh_btn.jpg) left top no-repeat;
+}
+
+.radio {
+    position: relative;
+    top: 3px;
+    margin-right: 4px;
+}
+
+.backCar {
+    float: right;
+    font-size: 12px;
+    font-family: "宋体";
+    margin-right: 33px;
+    color: #3377FF;
+}
+
+.backCar:hover {
+    text-decoration: underline;
+}
+
+.cart-head {
+    padding-top: 5px;
+}
+
+.cart-head .cart-item {
+    line-height: 28px;
+}
+
+.cart-item {
+    border-bottom: #CCC solid 1px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.t-name {
+    width: 440px;
+    padding-left: 30px;
+}
+
+.t-price {
+    width: 134px;
+}
+
+.t-return {
+    width: 136px;
+}
+
+.t-num {
+    width: 135px;
+}
+
+.t-subtotal {
+    width: 123px;
+}
+
+.t-red {
+    color: red;
+}
+
+/*商品信息*/
+.cart-cont {
+    border-bottom: solid 1px #ccc;
+}
+
+.cart-cont .cart-item {
+    border-bottom: none;
+}
+
+.cart-cont .t-price,
+.cart-cont .t-return,
+.cart-cont .t-num,
+.cart-cont .t-subtotal {
+    line-height: 37px;
+}
+
+.cart-shopInfo img {
+    width: 90px;
+    height: 100px;
+    display: block;
+    float: left;
+}
+
+.cart-shopInfo-cont {
+    padding-left: 90px;
+    font-size: 12px;
+}
+
+.cart-link {
+    line-height: 37px;
+    margin-bottom: 30px;
+}
+
+.cart-link a:hover {
+    text-decoration: underline;
+}
+
+.cart-info {
+    color: #000;
+}
+
+.cart-message {
+    line-height: 40px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.cart-prompt {
+    line-height: 40px;
+    padding-left: 30px;
+    color: red;
+}
+
+.cart-prompt-icon {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-position: 0 -19px;
+    margin-right: 11px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.cart-no-bor {
+    border-bottom: none;
+}
+
+.cart-rmb {
+    margin-bottom: 16px;
+}
+
+.cart-rmb i {
+    font-size: 14px;
+    color: #999;
+    font-style: normal;
+}
+
+.cart-rmb span {
+    font: bold 24px/1 Verdana;
+    color: red;
+}
+
+.cart-btnBox {
+    text-align: right;
+}
+
+.cart-btn {
+    width: 165px;
+    height: 33px;
+    background-color: #E50007;
+    font: 18px/33px "Microsoft YaHei", "微软雅黑";
+    color: #FFF;
+}

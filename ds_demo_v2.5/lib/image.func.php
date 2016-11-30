@@ -23,7 +23,7 @@ function verifyImage($type = 1, $length = 4, $pixel = 200, $line = 3, $sess_name
 //将随机生成的验证码保存到 $_SESSION 的 authcode 变量中
     $_SESSION[$sess_name] = $chars;
 //定义字体文件库
-    $fontfiles = array("msyh.ttc", "msyhbd.ttc", "msyhl.ttc", "SIMYOU.TTF", "STCAIYUN.TTF", "STHUPO.TTF", "STZHONGS.TTF");
+    $fontfiles = array("SIMYOU.TTF", "STCAIYUN.TTF", "STHUPO.TTF", "STZHONGS.TTF");
     for ($i = 0; $i < $length; $i++) {
         $size = mt_rand(14, 18); //14-18随机大小
         $angle = mt_rand(-15, 15); //随机角度
