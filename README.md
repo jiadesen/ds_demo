@@ -13,7 +13,7 @@
     
     Webstorm 2016.2.3(64)
     
-    Phpstorm 2016.3(64)
+    Phpstorm 2016.3(64)
     
     XAMPP 集成软件
     
