@@ -20,7 +20,7 @@ $(document).ready(function () {
         if (i >= count) return;
         //遍历当前可见的图片使其淡出
         $("#banner_list a").filter(":visible").fadeOut(500)
-            //找到选中的a的图片使其淡入
+        //找到选中的a的图片使其淡入
             .parent().children().eq(i).fadeIn(1000);
         $(this).toggleClass("active");
         $(this).siblings().removeAttr("class");
@@ -58,6 +58,17 @@ $('#exit').click(function () {
 });
 // console.log('local:'+localStorage['loginName']);
 // console.log('session:'+sessionStorage['loginName']);
+
+//功能点6：nivo-slider轮播特效
+$('#slider_1,#slider_2').nivoSlider({
+    effect: 'boxRandom', //效果
+    animSpeed: 500, //动画速度
+    pauseTime: 3000, //暂停时间
+    directionNav: false, //不使用左右导航
+    boxCols: 3, //分为3列
+});
+// 设置小圆点导航偏移值，使居中
+$(".nivo-controlNav").css("marginLeft", -50);
 
 
 

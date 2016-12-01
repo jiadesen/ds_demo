@@ -5,6 +5,7 @@
     <title>商城首页</title>
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nivo-slider.css">
     <!--[if IE 6]>
     <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
     <script type="text/javascript" src="js/ie6Fixpng.js"></script>
@@ -48,15 +49,19 @@
 </div>
 <div class="shop-list com-width clearfix">
     <div class="left-area">
-        <div class="banner-bar banner-sm">
-            <ul class="img-box">
-                <li><a href="#"><img src="img/banner/banner_sm_01.jpg" alt="banner"></a></li>
-                <li><a href="#"><img src="img/banner/banner_sm_02.jpg" alt="banner"></a></li>
-            </ul>
-            <div class="img-num">
-                <a href="#" class="active"></a>
-                <a href="#"></a>
+        <div class="banner-bar banner-sm slider-wrapper">
+            <div id="slider_1" class="nivoSlider" style="width: 190px;height: 400px;">
+                <a href="#" class="nivo-imageLink">
+                    <img src="img/banner/banner_sm_01.jpg" alt="banner">
+                </a>
+                <a href="#" class="nivo-imageLink">
+                    <img src="img/banner/banner_sm_02.jpg" alt="banner">
+                </a>
             </div>
+            <!--<div class="nivo-controlNav">-->
+                <!--<a href="#"></a>-->
+                <!--<a href="#"></a>-->
+            <!--</div>-->
         </div>
     </div>
     <div class="right-area">
@@ -138,15 +143,19 @@
 </div>
 <div class="shop-list com-width clearfix">
     <div class="left-area">
-        <div class="banner-bar banner-sm">
-            <ul class="img-box">
-                <li><a href="#"><img src="img/banner/banner_sm_01.jpg" alt="banner"></a></li>
-                <li><a href="#"><img src="img/banner/banner_sm_02.jpg" alt="banner"></a></li>
-            </ul>
-            <div class="img-num">
-                <a href="#" class="active"></a>
-                <a href="#"></a>
+        <div class="banner-bar banner-sm slider-wrapper">
+            <div id="slider_2" class="nivoSlider" style="width: 190px;height: 400px;">
+                <a href="#" class="nivo-imageLink">
+                    <img src="img/banner/banner_sm_03.jpg" alt="banner">
+                </a>
+                <a href="#" class="nivo-imageLink">
+                    <img src="img/banner/banner_sm_04.jpg" alt="banner">
+                </a>
             </div>
+            <!--<div class="nivo-controlNav">-->
+            <!--<a href="#"></a>-->
+            <!--<a href="#"></a>-->
+            <!--</div>-->
         </div>
     </div>
     <div class="right-area">
@@ -223,6 +232,7 @@
 <!--页面尾部-->
 <div class="footer"></div>
 <script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.nivo.slider.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
