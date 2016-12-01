@@ -18,10 +18,10 @@ $(document).ready(function () {
         var i = $(this).text() - 1;
         n = i;
         if (i >= count) return;
-        //遍历当前可见的图片使其淡出，
+        //遍历当前可见的图片使其淡出
         $("#banner_list a").filter(":visible").fadeOut(500)
             //找到选中的a的图片使其淡入
-            .parent().children().eq(i).fadeIn(1200);
+            .parent().children().eq(i).fadeIn(1000);
         $(this).toggleClass("active");
         $(this).siblings().removeAttr("class");
     });

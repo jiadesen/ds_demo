@@ -5,6 +5,7 @@ body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div
 }
 
 body {
+    min-width: 1349px;
     font-size: 12px;
 }
 
@@ -57,6 +58,7 @@ a:hover {
 /*公用样式*/
 .com-width {
     width: 1000px;
+    min-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
