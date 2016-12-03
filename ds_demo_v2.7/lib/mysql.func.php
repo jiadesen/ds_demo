@@ -6,7 +6,7 @@
  */
 function connect()
 {
-  $link = mysqli_connect(DB_HOST, DB_USER, DB_PWD, DB_DBNAME);
+  $link = mysqli_connect(DB_HOST, DB_USER, DB_PWD, DB_DBNAME, DB_PORT);
   mysqli_set_charset($link, DB_CHARSET);
 //  检测连接
   if ($link->connect_error) {

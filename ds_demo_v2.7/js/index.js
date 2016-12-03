@@ -61,11 +61,12 @@ $('#exit').click(function () {
 
 //功能点6：nivo-slider轮播特效
 $('#slider_1,#slider_2').nivoSlider({
-    effect: 'boxRandom', //效果
+    effect: 'random', //效果
+    slices: 4, //切片效果时的数量
+    boxCols: 4, //格子效果列
     animSpeed: 500, //动画速度
     pauseTime: 3000, //暂停时间
     directionNav: false, //不使用左右导航
-    boxCols: 3, //分为3列
 });
 // 设置小圆点导航偏移值，使居中
 $(".nivo-controlNav").css("marginLeft", -50);

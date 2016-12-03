@@ -62,9 +62,9 @@ function getAllAdmin()
 function getAdminByPage($page, $pageSize = 2)
 {
     $sql = "select * from shop_admin";
-    global $totalRows;
+    global $totalRows; //总条数
     $totalRows = getResultNum($sql);
-    global $totalPage;
+    global $totalPage; //总页数
     $totalPage = ceil($totalRows / $pageSize);
     if ($page < 1 || $page == null || !is_numeric($page)) {
         $page = 1;
