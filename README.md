@@ -9,6 +9,8 @@
     
     教程属于整站PHP开发，使用PHP完成后台主要功能以后，脱离教程，独立使用前端技术完成前台部分的开发。
     我的慕课账号： http://www.imooc.com/u/3606069  
+    
+上线地址：http://dsdemo.applinzi.com/
 
 # 开发环境
     
