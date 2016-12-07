@@ -11,6 +11,7 @@
     我的慕课账号： http://www.imooc.com/u/3606069  
     
 上线地址：http://dsdemo.applinzi.com/
+后台管理登录：http://dsdemo.applinzi.com/admin/ (默认管理员：admin 密码：admin)
 
 # 开发环境
     
