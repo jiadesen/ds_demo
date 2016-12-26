@@ -9,8 +9,8 @@
 .nivo-box img { display: block; }
 .nivo-directionNav a { opacity: 0; transition: opacity 0.3s ease 0s; position: absolute; top: 0px; bottom: 0px; z-index: 9; cursor: pointer; width: 65px; text-indent: -99px; overflow: hidden; }
 .slider-wrapper:hover .nivo-directionNav a { opacity: 1; }
-.nivo-prevNav { background: transparent url("slide-btnl.jpg") no-repeat scroll center center; left: -65px; }
-.nivo-nextNav { background: transparent url("slide-btnr.jpg") no-repeat scroll center center; right: -65px; }
+/*.nivo-prevNav { background: transparent url("slide-btnl.jpg") no-repeat scroll center center; left: -65px; }*/
+/*.nivo-nextNav { background: transparent url("slide-btnr.jpg") no-repeat scroll center center; right: -65px; }*/
 .nivo-controlNav { opacity: 0; transition: opacity 0.3s ease 0s; position: absolute; bottom: 10px; left: 50%; z-index: 10; margin-left: -100px; padding: 4px 16px; border-radius: 20px; background-color: rgba(0, 0, 0, 0.15); font-size: 0px; }
 .nivo-controlNav a { padding: 5px; display: inline-block; cursor: pointer; }
 .nivo-controlNav a span { display: block; width: 12px; height: 12px; border-radius: 6px; background-color: rgba(255, 255, 255, 0.4); transition: width 0.3s ease-out 0s; }
